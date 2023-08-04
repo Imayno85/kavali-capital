@@ -1,8 +1,8 @@
 {
-  "name": "kavalicapital.com",
+  "name": "kavalicapital",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://imayno85.github.io/www.kavalicapital.com",
+  "homepage": "https://imayno85.github.io/kavali-capital",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
