@@ -2,7 +2,7 @@
   "name": "kavalicapital",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://imayno85.github.io/kavali-capital",
+  "homepage": "https://imayno85.github.io/kavali-cap",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
