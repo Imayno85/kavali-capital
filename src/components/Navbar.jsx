@@ -13,8 +13,8 @@ const Navbar = () => {
         <img
           src={klogo_com_bw}
           alt="kavali_logo"
-          className=" w-[124px] h-[32px] ml-3"
-          style={{ transform: "scale(2)" }}
+          className=" w-[124px] h-[32px]  mt-4"
+          style={{ transform: "scale(4)" }}
         />
       </div>
 
