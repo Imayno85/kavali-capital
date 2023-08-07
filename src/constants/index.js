@@ -17,6 +17,10 @@ import {
   BankofAfrica,
   postbank,
   statehouse,
+  integrity,
+  customer_care,
+  team_work,
+  quality,
 } from "../assets";
 
 export const navLinks = [
@@ -26,7 +30,7 @@ export const navLinks = [
   },
   {
     id: "business",
-    title: "Business",
+    title: "About Us",
   },
   {
     id: "supplies",
@@ -43,6 +47,10 @@ export const navLinks = [
 ];
 
 export const heroCarousel = [
+  "https://img.freepik.com/free-photo/young-black-worker-examining-stainless-steel-cylinder-rod-while-working-distribution-warehouse_637285-4056.jpg?w=826&t=st=1691397836~exp=1691398436~hmac=ebf1f3b57021488cabdd95f10d323953a6d214c85b350ada12c63c59b4266148",
+
+  "https://img.freepik.com/free-photo/ethnic-businessman-gesturing-thumb-up_23-2147768596.jpg?w=826&t=st=1691397985~exp=1691398585~hmac=81ec532fc14f8f9d7ea1f4fd5eed3b63ee673c7b9cc6726723fd88fe66c0d716",
+
   "https://img.freepik.com/free-photo/core-values-word-young-people_53876-127867.jpg?size=626&ext=jpg&uid=R9011028&ga=GA1.1.1017697059.1679740000&semt=ais",
 
   "https://img.freepik.com/free-photo/about-us-overlay-word-young-people_53876-123883.jpg?w=826&t=st=1690478628~exp=1690479228~hmac=6096165743e8aa64166a09ecc340324a2b8fdb43f5e5f05c1ad4e7a39c0a49c8",
@@ -139,18 +147,27 @@ export const feedback = [
 export const ourValues = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    icon: integrity,
+    title: "Integrity",
+    value: "We practice high standards of integrity",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    icon: customer_care,
+    title: "Customer Care",
+    value: "Whilst putting the customer first",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    icon: team_work,
+    title: "Team Work",
+    value: "Working together to offer exceptional products",
+  },
+  {
+    id: "stats-4",
+    icon: quality,
+    title: "Quality",
+    value: "We believe in Quality",
   },
 ];
 

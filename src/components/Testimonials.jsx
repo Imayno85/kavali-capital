@@ -7,7 +7,7 @@ const Testimonials = () => (
     id="clients"
     className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
   >
-    <div className="flex flex-wrap sm:justify-start justify-center feedback-container relative z-[1]">
+    <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 gap-4  relative z-[1]">
       {feedback.map((card) => (
         <FeedbackCard key={card.id} {...card} />
       ))}

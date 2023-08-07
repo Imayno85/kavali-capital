@@ -7,7 +7,7 @@ import {
   CTA,
   Footer,
   Navbar,
-  // Stats,
+  Stats,
   Testimonials,
   Hero,
   ArrowUpButton,
@@ -27,14 +27,28 @@ const App = () => (
       </div>
     </div>
 
+    <div className={`bg-primary ${styles.flexStart}`}>
+      <Stats />
+    </div>
+
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <Business />
+    </div>
+
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <Supplies />
+    </div>
+
+    <div className={`bg-primary ${styles.flexStart}`}>
+      <Services />
+    </div>
+
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <Testimonials />
+    </div>
+
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        {/* <Stats /> */}
-        <Business />
-        <Supplies />
-        <Services />
-        {/* <CardDeal /> */}
-        <Testimonials />
         <Clients />
         <CTA />
         <Footer />

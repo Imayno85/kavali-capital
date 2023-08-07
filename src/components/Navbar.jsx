@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { close, klogo, menu } from "../assets";
+import { close, klogo, klogo_com_bw, menu } from "../assets";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
@@ -11,10 +11,10 @@ const Navbar = () => {
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <div className="flex items-start">
         <img
-          src={klogo}
-          alt="hoobank"
+          src={klogo_com_bw}
+          alt="kavali_logo"
           className=" w-[124px] h-[32px] ml-3"
-          style={{ transform: "scale(1.3)" }}
+          style={{ transform: "scale(2)" }}
         />
       </div>
 

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const FeedbackCard = ({ name, title, img }) => (
   <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 gap-4 px-10 py-12 rounded-[20px] my-5 feedback-card max-w-[50%]">
     <div className="flex items-center">
@@ -17,5 +19,11 @@ const FeedbackCard = ({ name, title, img }) => (
     </div>
   </div>
 );
+
+FeedbackCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+};
 
 export default FeedbackCard;

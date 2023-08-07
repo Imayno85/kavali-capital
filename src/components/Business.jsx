@@ -37,10 +37,10 @@ const Business = () => (
         Redefined for your everyday needs
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde recusandae
-        fuga incidunt nam ad dolorum inventore, maxime repudiandae totam
-        architecto corrupti facere nostrum obcaecati praesentium maiores optio
-        id consequuntur temporibus!
+        Our unwavering commitment to quality, value, and convenience reshapes
+        your satisfaction into an unparalleled journey. Seamlessly merging
+        exceptional products and services, we transcend ordinary to deliver the
+        extraordinary for your everyday needs.
       </p>
 
       <Button styles={`mt-10`} />

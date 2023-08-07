@@ -3,6 +3,8 @@ import bill from "./bill.png";
 import binance from "./binance.png";
 import card from "./card.png";
 import klogo from "./klogo.svg";
+import klogo_com_bw from "./klogo_com_bw.svg";
+
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import send from "./Send.svg";
@@ -33,6 +35,10 @@ import real_estate from "./real_estate.svg";
 import BankofAfrica from "./BankofAfrica.jpg";
 import postbank from "./postbank.jpg";
 import statehouse from "./statehouse.jpg";
+import integrity from "./integrity.svg";
+import customer_care from "./customer_care.svg";
+import quality from "./quality.svg";
+import team_work from "./team_work.svg";
 
 export {
   airbnb,
@@ -40,6 +46,7 @@ export {
   binance,
   card,
   klogo,
+  klogo_com_bw,
   quotes,
   robot,
   send,
@@ -70,4 +77,8 @@ export {
   BankofAfrica,
   postbank,
   statehouse,
+  integrity,
+  customer_care,
+  team_work,
+  quality,
 };

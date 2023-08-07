@@ -1,21 +1,36 @@
 import { ourValues } from "../constants";
-import styles from "../style";
+import { layout } from "../style";
+import PropTypes from "prop-types"; // Import prop-types package
+
+const ValueCard = ({ icon, title, value }) => (
+  <div className="flex flex-row p-6 rounded-[20px] mb-6 feature-card mt-0">
+    <div className="w-[64px] h-[64px] rounded-full bg-dimBlue flex-shrink-0 flex items-center justify-center">
+      <img src={icon} alt="" className="w-[50%] h-[50%] object-contain" />
+    </div>
+    <div className="flex-1 flex flex-col ml-3 ">
+      <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
+        {title}
+      </h4>
+      <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
+        {value}
+      </p>
+    </div>
+  </div>
+);
+
+ValueCard.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+};
 
 const Stats = () => (
-  <section className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`}>
-    {ourValues.map((stat) => (
-      <div
-        key={stat.id}
-        className={`flex-1 flex justify-start items-center flex-row m-3`}
-      >
-        <h4 className="font-poppins font-semibold xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">
-          {stat.value}
-        </h4>
-        <p className="font-poppins font-normal xs:text-[20.45px] text-[15.45px] xs:leading-[26.58px] leading-[21.58px] text-gradient uppercase ml-3">
-          {stat.title}
-        </p>
-      </div>
-    ))}
+  <section id="values" className={`${layout.section} ${layout.sectionImg}`}>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {ourValues.map((val) => (
+        <ValueCard key={val.id} {...val} />
+      ))}
+    </div>
   </section>
 );
 

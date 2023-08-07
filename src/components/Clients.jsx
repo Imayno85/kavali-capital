@@ -10,7 +10,7 @@ const Clients = () => {
   console.log("Duplicate IDs:", duplicateIds);
 
   return (
-    <section className={`${styles.flexCenter} my-4`}>
+    <section id="client" className={`${styles.flexCenter} my-4`}>
       <div className={`${styles.flexCenter} flex-wrap w-full`}>
         {clients.map((client) => (
           <div
@@ -20,7 +20,7 @@ const Clients = () => {
             <img
               src={client.logo}
               alt="client_logo"
-              className="sm:w-[192px] w-[100px] object-contain"
+              className="sm:w-[192px] w-[100px] object-contain rounded-xl"
             />
           </div>
         ))}

@@ -5,7 +5,7 @@ const ArrowUpButton = () => {
 
   return (
     <button
-      className={`fixed bottom-6 right-6 bg-gray-800 p-2 rounded-full text-white shadow-lg transition-opacity duration-300 hover:opacity-80`}
+      className={`fixed bottom-6 right-6 bg-blue-gradient p-2 rounded-full text-black shadow-lg transition-opacity duration-300 hover:opacity-80`}
       onClick={scrollToTop}
     >
       <svg
