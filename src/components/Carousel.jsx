@@ -64,7 +64,7 @@ const Carousel = () => {
               }}
             >
               <img
-                className="rounded-[10px]"
+                className="rounded-[20px]"
                 src={img}
                 alt={`Image ${i}`}
                 style={{

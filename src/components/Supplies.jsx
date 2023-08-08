@@ -31,7 +31,7 @@ const Supplies = () => {
               <img
                 src={image}
                 alt={`carousel-slide-${index}`}
-                className="w-[100%] h-[100%] relative rounded-[10px]"
+                className="w-[100%] h-[100%] relative rounded-[20px]"
               />
             </div>
           ))}
@@ -48,8 +48,8 @@ const Supplies = () => {
           {/* <span className="text-gradient">Supplies</span>{" "} */}
           <br className="sm:block hidden" />
           {/* <hr className="w-full" /> */}
-          Elevate your lifetsyle with <br className="sm:block hidden" />{" "}
-          cutting-edge offerings in
+          Elevate your lifetsyle with cutting-edge
+          <br className="sm:block hidden" /> offerings in
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Consumer Electronics&nbsp;<b>|</b>

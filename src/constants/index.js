@@ -47,15 +47,13 @@ export const navLinks = [
 ];
 
 export const heroCarousel = [
-  "https://img.freepik.com/free-photo/young-black-worker-examining-stainless-steel-cylinder-rod-while-working-distribution-warehouse_637285-4056.jpg?w=826&t=st=1691397836~exp=1691398436~hmac=ebf1f3b57021488cabdd95f10d323953a6d214c85b350ada12c63c59b4266148",
-
-  "https://img.freepik.com/free-photo/ethnic-businessman-gesturing-thumb-up_23-2147768596.jpg?w=826&t=st=1691397985~exp=1691398585~hmac=81ec532fc14f8f9d7ea1f4fd5eed3b63ee673c7b9cc6726723fd88fe66c0d716",
-
-  "https://img.freepik.com/free-photo/core-values-word-young-people_53876-127867.jpg?size=626&ext=jpg&uid=R9011028&ga=GA1.1.1017697059.1679740000&semt=ais",
-
-  "https://img.freepik.com/free-photo/about-us-overlay-word-young-people_53876-123883.jpg?w=826&t=st=1690478628~exp=1690479228~hmac=6096165743e8aa64166a09ecc340324a2b8fdb43f5e5f05c1ad4e7a39c0a49c8",
-
-  "https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595826.jpg?w=1060&t=st=1690478672~exp=1690479272~hmac=91eba674bbb8b9a5ed19e2641982039f9540572bd71b4ceaf9c07dbe14047b98",
+  "/img/carousel_img/carousel-1.jpg",
+  "/img/carousel_img/carousel-2.jpg",
+  "/img/carousel_img/carousel-3.jpg",
+  "/img/carousel_img/carousel-4.jpg",
+  "/img/carousel_img/carousel-5.jpg",
+  "/img/carousel_img/carousel-6.jpg",
+  "/img/carousel_img/carousel-7.jpg",
 ];
 
 export const features = [
