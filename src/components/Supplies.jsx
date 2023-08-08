@@ -48,8 +48,8 @@ const Supplies = () => {
           {/* <span className="text-gradient">Supplies</span>{" "} */}
           <br className="sm:block hidden" />
           {/* <hr className="w-full" /> */}
-          Easily control your <br className="sm:block hidden" /> billing &
-          invoicing
+          Elevate your lifetsyle with <br className="sm:block hidden" />{" "}
+          cutting-edge offerings in
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Consumer Electronics&nbsp;<b>|</b>
