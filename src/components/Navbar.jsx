@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { close, klogo, klogo_com_bw, menu } from "../assets";
+import { close, klogo_com_bw, menu } from "../assets";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
