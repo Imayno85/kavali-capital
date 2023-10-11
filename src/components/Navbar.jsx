@@ -8,13 +8,13 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-8 px-8 justify-between items-center navbar">
-      <div className="flex items-start">
+    <nav className="w-full flex py-6  justify-between items-center navbar">
+      <div className="flex items-center">
         <img
           src={klogo_com_bw}
           alt="kavali_logo"
-          className=" w-[124px] h-[32px]  mt-4"
-          style={{ transform: "scale(4.5)" }}
+          className=" w-[124px] h-[32px] ml-8"
+          style={{ transform: "scale(4)" }}
         />
       </div>
 

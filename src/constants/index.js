@@ -17,6 +17,7 @@ import {
   BankofAfrica,
   postbank,
   statehouse,
+  fintelligenceauthority,
   integrity,
   customer_care,
   team_work,
@@ -53,7 +54,6 @@ export const heroCarousel = [
   "/img/carousel_img/carousel-4.jpg",
   "/img/carousel_img/carousel-5.jpg",
   "/img/carousel_img/carousel-6.jpg",
-  "/img/carousel_img/carousel-7.jpg",
 ];
 
 export const features = [
@@ -270,5 +270,9 @@ export const clients = [
   {
     id: "client-3",
     logo: statehouse,
+  },
+  {
+    id: "client-4",
+    logo: fintelligenceauthority,
   },
 ];

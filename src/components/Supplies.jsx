@@ -25,6 +25,45 @@ const Supplies = () => {
           showStatus={false}
           infiniteLoop={true}
           transitionTime={500}
+          selectedItem={0} // Set the initially selected item to control the highlight
+          renderIndicator={(onClickHandler, isSelected, index, label) => {
+            if (isSelected) {
+              return (
+                <li
+                  style={{
+                    background: "orange",
+                    width: "8px",
+                    height: "8px",
+                    borderRadius: "50%",
+                    display: "inline-block",
+                    margin: "0 4px",
+                  }}
+                  aria-label={`Selected: ${label}`}
+                  title={`Selected: ${label}`}
+                />
+              );
+            }
+            return (
+              <li
+                style={{
+                  background: "#ddd",
+                  width: "8px",
+                  height: "8px",
+                  borderRadius: "50%",
+                  display: "inline-block",
+                  margin: "0 4px",
+                }}
+                onClick={onClickHandler}
+                onKeyDown={onClickHandler}
+                value={index}
+                key={index}
+                role="button"
+                tabIndex={0}
+                title={`${label}`}
+                aria-label={`${label}`}
+              />
+            );
+          }}
         >
           {carouselImages.map((image, index) => (
             <div key={index} className="w-[100%] h-[100%] relative">

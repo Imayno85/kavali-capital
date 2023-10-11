@@ -33,6 +33,21 @@
   background-clip: text;
   text-fill-color: transparent;
 }
+.text-orange-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #fef2e7 0.89%,
+    #f9b672 17.23%,
+    #f8aa5a 42.04%,
+    #f79e42 55.12%,
+    #f6922b 71.54%,
+    #f58614 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
 
 .bg-blue-gradient {
   background: linear-gradient(
@@ -43,6 +58,17 @@
     #7de7eb 29.82%,
     #5ce1e6 51.94%,
     #33bbcf 90.29%
+  );
+}
+.bg-orange-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #fef2e7 -43.27%,
+    #f9b672 -21.24%,
+    #f8aa5a 12.19%,
+    #f79e42 29.82%,
+    #f6922b 51.94%,
+    #f58614 90.29%
   );
 }
 

@@ -20,9 +20,8 @@ import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
-import people01 from "./people01.png";
-import people02 from "./people02.png";
-import people03 from "./people03.png";
+import people01 from "./people01.jpg";
+import people02 from "./people02.jpg";
 import mission from "./mission.svg";
 import vision from "./vision.svg";
 import promise from "./promise.svg";
@@ -35,6 +34,7 @@ import real_estate from "./real_estate.svg";
 import BankofAfrica from "./BankofAfrica.jpg";
 import postbank from "./postbank.jpg";
 import statehouse from "./statehouse.jpg";
+import fintelligenceauthority from "./fintelligenceauthority.jpg";
 import integrity from "./integrity.svg";
 import customer_care from "./customer_care.svg";
 import quality from "./quality.svg";
@@ -64,7 +64,6 @@ export {
   twitter,
   people01,
   people02,
-  people03,
   mission,
   vision,
   promise,
@@ -77,6 +76,7 @@ export {
   BankofAfrica,
   postbank,
   statehouse,
+  fintelligenceauthority,
   integrity,
   customer_care,
   team_work,

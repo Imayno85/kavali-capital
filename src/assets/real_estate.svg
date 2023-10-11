@@ -3,11 +3,10 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#00F6FF;}
+	.st0{fill:#F58614;}
 </style>
 <g transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-	<polygon class="st0" points="75.96,30.96 75.96,13.34 67.26,13.34 67.26,22.26 45,0 0.99,44.02 7.13,50.15 45,12.28 82.88,50.15 
-		89.01,44.02 	"/>
-	<polygon class="st0" points="45,20 14.04,50.95 14.04,90 35.29,90 35.29,63.14 54.71,63.14 54.71,90 75.96,90 75.96,50.95 	"/>
+	<polygon class="st0" points="76,31 76,13.3 67.3,13.3 67.3,22.3 45,0 1,44 7.1,50.2 45,12.3 82.9,50.2 89,44 	"/>
+	<polygon class="st0" points="45,20 14,51 14,90 35.3,90 35.3,63.1 54.7,63.1 54.7,90 76,90 76,51 	"/>
 </g>
 </svg>
