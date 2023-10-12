@@ -20,7 +20,7 @@ const FeatureCard = ({ icon, title, content }) => (
 const Services = () => (
   <section id="services" className={layout.section}>
     <div
-      className={`${layout.sectionImg} grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6`}
+      className={`${layout.sectionImg} grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 border-t-[1px] border-t-[#3F3E45]`}
     >
       {services.map((feature) => (
         <FeatureCard key={feature.id} {...feature} />

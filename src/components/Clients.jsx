@@ -10,7 +10,10 @@ const Clients = () => {
   console.log("Duplicate IDs:", duplicateIds);
 
   return (
-    <section id="clients" className={`${styles.flexCenter} my-4`}>
+    <section
+      id="clients"
+      className={`${styles.flexCenter} my-4 border-t-[1px] border-t-[#3F3E45]`}
+    >
       <div className={`${styles.flexCenter} flex-wrap w-full`}>
         {clients.map((client) => (
           <div

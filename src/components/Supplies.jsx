@@ -92,7 +92,7 @@ const Supplies = () => {
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Consumer Electronics&nbsp;<b>|</b>
-          &nbsp;Phones&nbsp;&amp;&nbsp;Tablets&nbsp;|&nbsp;General
+          &nbsp;Phones&nbsp;&amp;&nbsp;Tablets&nbsp;<b>|</b>&nbsp;General
           Supplies&nbsp;<b>|</b>&nbsp;Computers&nbsp;<b>|</b>&nbsp;Motor
           Vehicles&nbsp;<b>|</b>&nbsp;Audio Equipment
         </p>
