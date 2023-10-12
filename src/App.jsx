@@ -38,7 +38,7 @@ const App = () => (
         <Stats />
         <div
           id="business"
-          className={`${styles.heading2} text-center mt-2 text-orange-gradient`}
+          className={`${styles.heading3} text-center mt-2 text-orange-gradient`}
         >
           About Us
         </div>

@@ -7,6 +7,9 @@ const styles = {
   heading3:
     "font-poppins font-semibold text-[36px] text-white leading-[56.25px] w-full",
 
+  heading4:
+    "font-poppins font-semibold text-[28px] text-white leading-[48px] w-full",
+
   paragraph:
     "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
 
