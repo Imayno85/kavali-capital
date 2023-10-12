@@ -29,11 +29,44 @@ const App = () => (
 
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
+        <div
+          id="hero"
+          className={`${styles.heading3} text-center mt-2  text-orange-gradient `}
+        >
+          Our Values
+        </div>
         <Stats />
+        <div
+          id="business"
+          className={`${styles.heading2} text-center mt-2 text-orange-gradient`}
+        >
+          About Us
+        </div>
         <Business />
+        <div
+          id="supplies"
+          className={`${styles.heading3} text-center mt-2 text-orange-gradient`}
+        >
+          Supplies
+        </div>
         <Supplies />
+        <div
+          id="services"
+          className={`${styles.heading3} text-center mt-2 text-orange-gradient`}
+        >
+          Our Services
+        </div>
         <Services />
+        <div className={`${styles.heading3} text-center text-orange-gradient`}>
+          The Team
+        </div>
         <Testimonials />
+        <div
+          id="clients"
+          className={`${styles.heading3} text-center text-orange-gradient`}
+        >
+          Our Clients
+        </div>
         <Clients />
         <CTA />
         <Footer />

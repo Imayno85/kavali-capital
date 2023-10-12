@@ -48,6 +48,7 @@ const Carousel = () => {
             overflowX: "hidden",
             scrollSnapType: "x mandatory",
             height: "400px", // Set a fixed height for the carousel container
+            width: "100%", // Make the carousel container 100% wide
           }}
         >
           {heroCarousel.map((img, i) => (

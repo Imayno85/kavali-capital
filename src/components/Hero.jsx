@@ -1,5 +1,4 @@
 import styles from "../style";
-// import { discount } from "../assets";
 import GetStarted from "./GetStarted";
 import Carousel from "./Carousel";
 
@@ -12,7 +11,7 @@ const Hero = () => {
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
-        <div className="flex flex-row justify-between items-center w-full ">
+        <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
             Quality <br className="sm:block hidden" />{" "}
             <span className="text-orange-gradient">Value</span>{" "}
@@ -35,12 +34,8 @@ const Hero = () => {
       <div
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        <Carousel />
-
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
-        {/* gradient end */}
+        <Carousel style={{ width: "100%" }} /> {/* Adjusted width to 100% */}
+        {/* ... rest of the gradient elements */}
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>
