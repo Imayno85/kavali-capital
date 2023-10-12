@@ -26,7 +26,7 @@ const Navbar = () => {
         <img
           src={klogo_com_bw}
           alt="kavali_logo"
-          className="w-[240px] h-[80px]" // Adjusted logo size
+          className="w-[276px] h-[92px]" // Adjusted logo size
           style={{ maxWidth: "100%", height: "auto" }} // Adjusted style for responsiveness
         />
       </div>
