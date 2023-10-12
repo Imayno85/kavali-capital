@@ -1,11 +1,11 @@
 import { heroCarousel } from "../constants";
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const Carousel = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const carouselContainerRef = useRef(null);
 
-  const scrollToImage = useCallback((i) => {
+  const scrollToImage = (i) => {
     setCurrentImage(i);
     if (carouselContainerRef.current) {
       const carouselWidth = carouselContainerRef.current.clientWidth;
@@ -14,19 +14,20 @@ const Carousel = () => {
         behavior: "smooth",
       });
     }
-  }, []);
+  };
 
   const totalImages = heroCarousel.length;
 
-  const nextImage = useCallback(() => {
+  const nextImage = () => {
     let nextIndex = currentImage + 1;
     if (nextIndex >= totalImages) {
       nextIndex = 0;
     }
     scrollToImage(nextIndex);
-  }, [currentImage, totalImages, scrollToImage]);
+  };
 
   useEffect(() => {
+    // Auto-scroll to the next image every 5 seconds
     const autoScroll = setInterval(() => {
       nextImage();
     }, 5000);
@@ -34,20 +35,19 @@ const Carousel = () => {
     return () => {
       clearInterval(autoScroll);
     };
-  }, [nextImage]);
+  }, [currentImage, nextImage]); // Add nextImage to the dependency array
 
   return (
     <div className="p-12 flex justify-center">
       <div className="relative w-full">
         <div
-          className="carousel sm:rounded-[20px]" // Apply rounded corners for small and larger screens
+          className="carousel"
           ref={carouselContainerRef}
           style={{
             display: "flex",
             overflowX: "hidden",
             scrollSnapType: "x mandatory",
-            height: "400px",
-            overflowY: "hidden",
+            height: "400px", // Set a fixed height for the carousel container
           }}
         >
           {heroCarousel.map((img, i) => (
@@ -61,18 +61,16 @@ const Carousel = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 position: "relative",
-                transition: "transform 0.5s ease-in-out", // Transition for smoother image change
               }}
             >
               <img
                 className="rounded-[20px]"
                 src={img}
                 alt={`Image ${i}`}
-                loading="lazy" // Lazy loading
-                width="100%" // Specify width and height
-                height="100%"
                 style={{
-                  objectFit: "cover",
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover", // Fill the container without stretching
                 }}
               />
               <div className="dot-container absolute bottom-4 flex justify-center w-full">
