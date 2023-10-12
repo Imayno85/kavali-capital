@@ -47,17 +47,17 @@ const Business = () => (
       </p>
 
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Kavali Corporation Limited (KCL) is officially registered and authorized
-        by the <b>Petroleum Authority of Uganda</b> to provide a range of goods
-        and services to the oil and gas sector in Uganda. Our registration is
-        under the NSD number <b>NS-15200/2023/4180.</b>
+        KCL is registered and approved by the Petroleum Authority of Uganda to
+        legally supply goods and services to the oil and gas sector in Uganda.
+        Our NSD number is,{" "}
+        <b className="text-orange-gradient">NS-15200/2023/4180</b>.
       </p>
 
       <Button styles={`mt-10`} />
     </div>
 
     {/* Mission, Vision & Promise */}
-    <div className={`${layout.sectionImg} flex-col`}>
+    <div className={`${layout.sectionImg1} flex-col`}>
       {features.map((feature) => (
         <FeatureCard key={feature.id} {...feature} />
       ))}

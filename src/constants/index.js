@@ -262,17 +262,21 @@ export const clients = [
   {
     id: "client-1",
     logo: BankofAfrica,
+    name: "Bank of Africa",
   },
   {
     id: "client-2",
     logo: postbank,
+    name: "Post Bank",
   },
   {
     id: "client-3",
     logo: statehouse,
+    name: "State House",
   },
   {
     id: "client-4",
     logo: fintelligenceauthority,
+    name: "Financial Intelligence Authority",
   },
 ];

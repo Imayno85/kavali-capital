@@ -90,7 +90,7 @@ const Supplies = () => {
           {/* <span className="text-gradient">Supplies</span>{" "} */}
           <br className="sm:block hidden" />
           {/* <hr className="w-full" /> */}
-          Elevate your lifetsyle with cutting-edge
+          Elevate your lifestyle with cutting-edge
           <br className="sm:block hidden" /> offerings in
         </h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
