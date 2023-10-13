@@ -1,6 +1,31 @@
 const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
+  // Raleway Font
+  // heading2: "font-raleway font-semibold text-4xl text-white leading-1.2",
+  // heading3: "font-raleway font-semibold text-3xl text-white leading-1.3",
+  // heading4: "font-raleway font-semibold text-2xl text-white leading-1.5",
+  // paragraph: "font-raleway font-normal text-base text-dimWhite leading-1.6",
+
+  // Lato Font
+  // heading2: "font-lato font-semibold text-4xl text-white leading-1.2",
+  // heading3: "font-lato font-semibold text-3xl text-white leading-1.3",
+  // heading4: "font-lato font-semibold text-2xl text-white leading-1.5",
+  // paragraph: "font-lato font-normal text-base text-dimWhite leading-1.6",
+  // ==============================================================
+  // Roboto Font
+  // heading2:
+  //   "font-roboto font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+  // heading3:
+  //   "font-roboto font-semibold text-[36px] text-white leading-[56.25px] w-full",
+  // paragraph:
+  //   "font-roboto font-normal text-dimWhite text-[18px] leading-[30.8px]",
+
+  // heading4:
+  //   "font-roboto font-semibold text-[28px] text-white leading-[48px] w-full",
+  // ==============================================================
+  // Original Fonts Poppins
+  // ... other styles
   heading2:
     "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
 
@@ -12,7 +37,7 @@ const styles = {
 
   paragraph:
     "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
-
+  // =================================================================
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
 

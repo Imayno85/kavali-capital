@@ -1,9 +1,15 @@
 import PropTypes from "prop-types";
 
 const FeedbackCard = ({ name, title, img }) => (
-  <div className="flex flex-col items-center px-10 py-12 my-5 max-w-[80%]">
-    <img src={img} alt={name} className="w-[60] h-[60] rounded-full bg-white" />
-    <div className="flex flex-col justify-center ml-4 mt-4 md:mt-0">
+  <div className="flex flex-col items-center p-12 my-5 lg:mx-2 max-w-full">
+    <div className="rounded-full bg-white overflow-hidden w-63 h-63">
+      <img
+        src={img}
+        alt={name}
+        className="w-[60] h-[60] object-cover rounded-full"
+      />
+    </div>
+    <div className="flex flex-col items-center mt-4">
       <h4 className="font-poppins font-semibold text-[20px] leading-[32px] text-white text-center">
         {name}
       </h4>

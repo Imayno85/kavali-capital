@@ -50,7 +50,7 @@ const Business = () => (
         KCL is registered and approved by the Petroleum Authority of Uganda to
         legally supply goods and services to the oil and gas sector in Uganda.
         Our NSD number is,{" "}
-        <b className="text-orange-gradient">NS-15200/2023/4180</b>.
+        <b className="text-orange-gradient">NS-15200/2023/4180</b>
       </p>
 
       <Button styles={`mt-10`} />
