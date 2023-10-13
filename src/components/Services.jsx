@@ -10,7 +10,7 @@ const FeatureCard = ({ icon, title, content }) => (
       <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
         {title}
       </h4>
-      <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[24px]">
+      <p className="font-poppins font-normal text-dimWhite text-[15.2px] leading-[22.8px]">
         {content}
       </p>
     </div>
