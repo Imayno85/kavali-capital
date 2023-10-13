@@ -34,6 +34,7 @@ export const layout = {
   sectionImg1: ` flex-1 flex  justify-start mt-10 lg:justify-center `,
 
   sectionInfo: `flex-1 ${styles.flexStart} flex-col`,
+  feedbackCardContent: "flex flex-col justify-center items-center text-center",
 };
 
 export default styles;

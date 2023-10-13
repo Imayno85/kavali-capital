@@ -267,12 +267,12 @@ export const clients = [
   {
     id: "client-2",
     logo: postbank,
-    name: "Post Bank",
+    name: "Post Bank Uganda",
   },
   {
     id: "client-3",
     logo: statehouse,
-    name: "State House",
+    name: "State House Uganda",
   },
   {
     id: "client-4",

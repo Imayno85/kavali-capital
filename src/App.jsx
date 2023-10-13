@@ -47,7 +47,7 @@ const App = () => (
           id="supplies"
           className={`${styles.heading3} text-center mt-2 text-orange-gradient`}
         >
-          Supplies
+          Our Supplies
         </div>
         <Supplies />
         <div
