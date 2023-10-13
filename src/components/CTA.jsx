@@ -5,7 +5,7 @@ const CTA = () => (
   <section
     className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
   >
-    <div className="flex-1 flex flex-col">
+    <div className="flex-1 flex flex-col pb-4">
       <h2 className={styles.heading2}>Contact Us</h2>
 
       {/* Call Us */}

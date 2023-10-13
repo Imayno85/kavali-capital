@@ -93,7 +93,7 @@ const Supplies = () => {
           Elevate your lifestyle with cutting-edge
           <br className="sm:block hidden" /> offerings in
         </h2>
-        <p className={`${styles.paragraph1} max-w-[470px] mt-5`}>
+        <p className={`${styles.paragraph1} max-w-[470px] mt-5 xs:mb-4`}>
           Consumer Electronics&nbsp;<b>|</b>
           &nbsp;Phones&nbsp;&amp;&nbsp;Tablets&nbsp;<b>|</b>&nbsp;General
           Supplies&nbsp;<b>|</b>&nbsp;Computers&nbsp;<b>|</b>&nbsp;Motor
