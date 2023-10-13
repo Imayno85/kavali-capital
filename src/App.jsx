@@ -34,39 +34,39 @@ const App = () => (
           id="hero"
           className={`${styles.heading3} text-center mt-2  text-orange-gradient `}
         >
-          Our Values
+          OUR VALUES
         </div>
         <Stats />
         <div
           id="business"
           className={`${styles.heading3} text-center mt-2 text-orange-gradient`}
         >
-          About Us
+          ABOUT US
         </div>
         <Business />
         <div
           id="supplies"
           className={`${styles.heading3} text-center mt-2 text-orange-gradient`}
         >
-          Our Supplies
+          OUR SUPPLIES
         </div>
         <Supplies />
         <div
           id="services"
           className={`${styles.heading3} text-center mt-2 text-orange-gradient`}
         >
-          Our Services
+          OUR SERVICES
         </div>
         <Services />
         <div className={`${styles.heading3} text-center text-orange-gradient`}>
-          The Team
+          THE TEAM
         </div>
         <Testimonials />
         <div
           id="clients"
           className={`${styles.heading3} text-center text-orange-gradient`}
         >
-          Our Clients
+          OUR CLIENTS
         </div>
         <Clients />
         <CTA />

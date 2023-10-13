@@ -26,7 +26,7 @@ const Clients = () => {
                 alt="client_logo"
                 className="sm:w-[192px] w-[100px] object-contain rounded-xl"
               />
-              <span className="font-poppins font-normal text-[14px] leading-[24px] text-dimWhite mt-2 text-center">
+              <span className={`${styles.paragraph1}  mt-2 text-center`}>
                 {client.name}
               </span>
             </div>

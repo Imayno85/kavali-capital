@@ -1,5 +1,5 @@
 import { services } from "../constants";
-import styles, { layout } from "../style";
+import { layout } from "../style";
 
 const FeatureCard = ({ icon, title, content }) => (
   <div className="flex flex-row p-6 rounded-[20px] mb-6 feature-card ">

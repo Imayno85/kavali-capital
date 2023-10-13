@@ -39,14 +39,14 @@ const Business = () => (
         Exceptional products and services, <br className="sm:block hidden" />{" "}
         Redefined for your everyday needs
       </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+      <p className={`${styles.paragraph1} max-w-[470px] mt-5`}>
         Our unwavering commitment to quality, value, and convenience reshapes
         your satisfaction into an unparalleled journey. Seamlessly merging
         exceptional products and services, we transcend ordinary to deliver the
         extraordinary for your everyday needs.
       </p>
 
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+      <p className={`${styles.paragraph1} max-w-[470px] mt-5`}>
         KCL is registered and approved by the Petroleum Authority of Uganda to
         legally supply goods and services to the oil and gas sector in Uganda.
         Our NSD number is,{" "}

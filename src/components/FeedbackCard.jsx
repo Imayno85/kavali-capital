@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import styles from "../style";
 
 const FeedbackCard = ({ name, title, img }) => (
   <div className="flex flex-col items-center p-12 my-5 lg:mx-2 max-w-full">
@@ -13,9 +14,7 @@ const FeedbackCard = ({ name, title, img }) => (
       <h4 className="font-poppins font-semibold text-[20px] leading-[32px] text-white text-center">
         {name}
       </h4>
-      <p className="font-poppins font-normal text-[14px] leading-[24px] text-dimWhite mt-2 text-center">
-        {title}
-      </p>
+      <p className={`${styles.paragraph1}`}>{title}</p>
     </div>
   </div>
 );

@@ -27,7 +27,7 @@ const CTA = () => (
       {/* Address */}
       <div className={styles.subsection}>
         <p
-          className={`${styles.paragraph} max-w-[470px] mt-0 md:whitespace-nowrap`}
+          className={`${styles.paragraph1} max-w-[470px] mt-0 md:whitespace-nowrap`}
         >
           <b>Address:</b> Kira House, Suite 42B, Plot 4 Pilkington Road, P.O.Box
           119677 Kampala - Uganda
