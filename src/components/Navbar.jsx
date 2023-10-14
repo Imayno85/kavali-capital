@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { close, klogo_com_bw, menu } from "../assets";
 import { navLinks } from "../constants";
 
@@ -6,6 +6,7 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const menuRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,15 +21,31 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setToggle(false);
+      }
+    };
+
+    window.addEventListener("click", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <div className="flex items-center">
-        <img
-          src={klogo_com_bw}
-          alt="kavali_logo"
-          className="w-[276px] h-[92px]" // Adjusted logo size
-          style={{ maxWidth: "100%", height: "auto" }} // Adjusted style for responsiveness
-        />
+        <a href="/" className="cursor-pointer">
+          <img
+            src={klogo_com_bw}
+            alt="kavali_logo"
+            className="w-[276px] h-[92px]" // Adjusted logo size
+            style={{ maxWidth: "100%", height: "auto" }} // Adjusted style for responsiveness
+          />
+        </a>
       </div>
 
       {!isSmallScreen && (
@@ -47,7 +64,10 @@ const Navbar = () => {
         </ul>
       )}
 
-      <div className="md:hidden flex flex-1 justify-end items-center">
+      <div
+        className="md:hidden flex flex-1 justify-end items-center"
+        ref={menuRef}
+      >
         <img
           src={toggle ? close : menu}
           alt="menu"
