@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { close, klogo_com_bw, menu } from "../assets";
 import { navLinks } from "../constants";
 
@@ -10,10 +10,10 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 768); // Adjust the breakpoint as needed
+      setIsSmallScreen(window.innerWidth < 768);
     };
 
-    handleResize(); // Call once to set initial value
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -21,44 +21,60 @@ const Navbar = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setToggle(false);
-      }
+  const customScrollTo = (element) => {
+    const offsetTop = element.offsetTop;
+    const scrollOptions = {
+      left: 0,
+      top: offsetTop,
+      behavior: "smooth",
     };
 
-    window.addEventListener("click", handleClickOutside);
+    window.scrollTo(scrollOptions);
+  };
 
-    return () => {
-      window.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
+  const handleLinkClick = (navId) => {
+    const element = document.getElementById(navId);
+    if (element) {
+      customScrollTo(element);
+      setActive(navId);
+      setToggle(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    customScrollTo(document.body);
+    setActive("Home");
+  };
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <div className="flex items-center">
-        <a href="/" className="cursor-pointer">
+        <a href="/" className="cursor-pointer" onClick={scrollToTop}>
           <img
             src={klogo_com_bw}
             alt="kavali_logo"
-            className="w-[276px] h-[92px]" // Adjusted logo size
-            style={{ maxWidth: "100%", height: "auto" }} // Adjusted style for responsiveness
+            className="w-[276px] h-[92px]"
+            style={{ maxWidth: "100%", height: "auto" }}
           />
         </a>
       </div>
 
       {!isSmallScreen && (
         <ul className="list-none md:flex hidden justify-end items-center flex-1">
-          {navLinks.map((nav, index) => (
-            <li
-              key={nav.id}
-              className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                active === nav.title ? "text-white" : "text-dimWhite"
-              } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-              onClick={() => setActive(nav.title)}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+          {navLinks.map((nav) => (
+            <li key={nav.id}>
+              <span
+                onClick={() => handleLinkClick(nav.id)}
+                className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                  active === nav.id ? "text-orange-gradient" : "text-dimWhite"
+                } ${
+                  navLinks.indexOf(nav) === navLinks.length - 1
+                    ? "mr-0"
+                    : "mr-10"
+                }`}
+              >
+                {nav.title}
+              </span>
             </li>
           ))}
         </ul>
@@ -78,18 +94,24 @@ const Navbar = () => {
         {toggle && (
           <div className="p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar">
             <ul className="list-none flex justify-end items-start flex-1 flex-col">
-              {navLinks.map((nav, index) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-dimWhite"
-                  } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                  onClick={() => {
-                    setActive(nav.title);
-                    setToggle(false);
-                  }}
-                >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+              {navLinks.map((nav) => (
+                <li key={nav.id}>
+                  <span
+                    onClick={() => {
+                      handleLinkClick(nav.id);
+                    }}
+                    className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                      active === nav.id
+                        ? "text-orange-gradient"
+                        : "text-dimWhite"
+                    } ${
+                      navLinks.indexOf(nav) === navLinks.length - 1
+                        ? "mb-0"
+                        : "mb-4"
+                    }`}
+                  >
+                    {nav.title}
+                  </span>
                 </li>
               ))}
             </ul>
