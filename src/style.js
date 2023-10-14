@@ -3,8 +3,10 @@ const styles = {
 
   heading2:
     "font-poppins font-extrabold xs:text-[45.6px] text-black  text-[38px] text-white xs:leading-[72.96px] leading-[63.46px] w-full",
+  // heading3:
+  //   "font-poppins font-bold text-[32.5px] text-white leading-[50.875px] w-full",
   heading3:
-    "font-poppins font-bold text-[32.5px] text-white leading-[50.875px] w-full",
+    "font-poppins font-bold text-[32.5px] text-white leading-[50.875px] xs:text-[27px] xs:leading-[43.0875px] w-full",
 
   heading4:
     "font-raleway font-semibold text-[26.6px] text-white leading-[45.6px] w-full",
