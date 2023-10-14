@@ -21,7 +21,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <h1 className={`${styles.heading2}`}>CONVINIENCE</h1>
+        <h1 className={`${styles.heading2}`}>CONVENIENCE</h1>
         <p className={`${styles.paragraph1} max-w-[470px] mt-5`}>
           Experience the perfect blend of quality, value and convenience with
           our exceptional products and services, elevating your satisfaction to
