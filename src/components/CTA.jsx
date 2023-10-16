@@ -12,7 +12,9 @@ const CTA = () => (
       <div className={styles.subsection}>
         <p className={`${styles.paragraph} max-w-[470px] mt-0`}>
           <b>Call:</b>{" "}
-          <span className={styles.paragraph1}>+256 773 275 029</span>
+          <span className={styles.paragraph1}>
+            <a href="tel:+256773275029">+256 773 275 029</a>
+          </span>
         </p>
       </div>
 
@@ -23,7 +25,7 @@ const CTA = () => (
         >
           <b>Email:</b>{" "}
           <a className={styles.paragraph1} href="mailto:info@kavalicapital.com">
-            info@kavalicapital.com
+            info@kavalicapital.com{" "}
           </a>
           <a
             className={styles.paragraph1}
