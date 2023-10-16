@@ -9,8 +9,7 @@ const Supplies = () => {
     "/img/ce/ce-2.jpg",
     "/img/ce/ce-3.jpg",
     "/img/ce/ce-4.jpg",
-    "/img/ce/ce-5.jpg",
-    "/img/ce/ce-6.jpg",
+
     // Add more image paths if needed
   ];
 
