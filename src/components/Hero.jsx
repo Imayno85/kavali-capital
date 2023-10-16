@@ -12,7 +12,7 @@ const Hero = () => {
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className={`${styles.heading2} flex-1 sm:text-center`}>
+          <h1 className={`${styles.heading2} flex-1`}>
             QUALITY <br /> <span className="text-orange-gradient ">VALUE</span>{" "}
             <br /> <span>CONVENIENCE</span>
           </h1>
