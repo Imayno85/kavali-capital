@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Supplies from "./Supplies";
-import CardDeal from "./CardDeal";
+
 import Business from "./Business";
 import Services from "./Services";
 import Clients from "./Clients";
@@ -15,7 +15,6 @@ export {
   Navbar,
   Supplies,
   Services,
-  CardDeal,
   Business,
   Clients,
   CTA,

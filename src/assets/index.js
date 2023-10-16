@@ -1,7 +1,3 @@
-import airbnb from "./airbnb.png";
-import bill from "./bill.png";
-import binance from "./binance.png";
-import card from "./card.png";
 // import klogo from "./klogo.svg";
 import klogo_com_bw from "./klogo_com_bw.svg";
 
@@ -41,10 +37,6 @@ import quality from "./quality.svg";
 import team_work from "./team_work.svg";
 
 export {
-  airbnb,
-  bill,
-  binance,
-  card,
   // klogo,
   klogo_com_bw,
   quotes,
