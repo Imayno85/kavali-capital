@@ -27,9 +27,9 @@ ValueCard.propTypes = {
 const Stats = () => (
   <section
     id="values"
-    className={`${layout.section} ${layout.sectionImg} border-t-[1px] border-t-[#3F3E45]`}
+    className={`${layout.section} ${layout.sectionImg} border-t-[1px] border-t-[#3F3E45] `}
   >
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 sm:mb-8">
       {ourValues.map((val) => (
         <ValueCard key={val.id} {...val} />
       ))}

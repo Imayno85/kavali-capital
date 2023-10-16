@@ -31,39 +31,41 @@ const App = () => (
       <div className={`${styles.boxWidth}`}>
         <div
           id="hero"
-          className={`${styles.heading3} text-center mt-2  text-orange-gradient `}
+          className={`${styles.heading3} text-center mt-4  text-orange-gradient `}
         >
           OUR VALUES
         </div>
         <Stats />
         <div
           id="business"
-          className={`${styles.heading3} text-center mt-2 text-orange-gradient`}
+          className={`${styles.heading3} text-center mt-4 text-orange-gradient`}
         >
           ABOUT US
         </div>
         <Business />
         <div
           id="supplies"
-          className={`${styles.heading3} text-center mt-2 text-orange-gradient`}
+          className={`${styles.heading3} text-center mt-4 text-orange-gradient`}
         >
           OUR SUPPLIES
         </div>
         <Supplies />
         <div
           id="services"
-          className={`${styles.heading3} text-center mt-2 text-orange-gradient`}
+          className={`${styles.heading3} text-center mt-4 text-orange-gradient`}
         >
           OUR SERVICES
         </div>
         <Services />
-        <div className={`${styles.heading3} text-center text-orange-gradient`}>
+        <div
+          className={`${styles.heading3} text-center text-orange-gradient mt-4`}
+        >
           THE TEAM
         </div>
         <Testimonials />
         <div
           id="clients"
-          className={`${styles.heading3} text-center text-orange-gradient`}
+          className={`${styles.heading3} text-center text-orange-gradient mt-4`}
         >
           OUR CLIENTS
         </div>

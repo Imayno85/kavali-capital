@@ -52,8 +52,6 @@ export const heroCarousel = [
   "/img/carousel_img/carousel-2.jpg",
   "/img/carousel_img/carousel-3.jpg",
   "/img/carousel_img/carousel-4.jpg",
-  "/img/carousel_img/carousel-5.jpg",
-  "/img/carousel_img/carousel-6.jpg",
 ];
 
 export const features = [

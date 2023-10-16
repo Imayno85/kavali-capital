@@ -32,8 +32,7 @@ const Hero = () => {
       <div
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        <Carousel style={{ width: "100%" }} /> {/* Adjusted width to 100% */}
-        {/* ... rest of the gradient elements */}
+        <Carousel style={{ width: "100%" }} />
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>

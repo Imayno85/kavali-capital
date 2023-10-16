@@ -20,7 +20,7 @@ const FeatureCard = ({ icon, title, content }) => (
 const Services = () => (
   <section
     id="services"
-    className={`${layout.section} border-t-[1px] border-t-[#3F3E45] `}
+    className={`${layout.section} border-t-[1px] border-t-[#3F3E45] mb-16`}
   >
     <div
       className={`${layout.sectionImg} grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 `}

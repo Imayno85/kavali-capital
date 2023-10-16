@@ -32,9 +32,9 @@ FeatureCard.propTypes = {
 const Business = () => (
   <section
     id="business"
-    className={`${layout.section} border-t-[1px] border-t-[#3F3E45]`}
+    className={`${layout.section} border-t-[1px] border-t-[#3F3E45] `}
   >
-    <div className={layout.sectionInfo}>
+    <div className={`${layout.sectionInfo} mt-8`}>
       <h2 className={styles.heading2}>
         Exceptional products and services, <br className="sm:block hidden" />{" "}
         Redefined for your everyday needs
@@ -49,15 +49,17 @@ const Business = () => (
       <p className={`${styles.paragraph1} max-w-[470px] mt-5`}>
         KCL is registered and approved by the Petroleum Authority of Uganda to
         legally supply goods and services to the oil and gas sector in Uganda.
-        Our NSD number is,{" "}
-        <b className="text-orange-gradient">NS-15200/2023/4180</b>
+        Our NSD number is{" "}
+        <b className="whitespace-nowrap text-orange-gradient">
+          NS-15200/2023/4180
+        </b>
       </p>
 
       <Button styles={`mt-10`} />
     </div>
 
     {/* Mission, Vision & Promise */}
-    <div className={`${layout.sectionImg1} flex-col`}>
+    <div className={`${layout.sectionImg1} flex-col mt-8 sm:mb-12`}>
       {features.map((feature) => (
         <FeatureCard key={feature.id} {...feature} />
       ))}
