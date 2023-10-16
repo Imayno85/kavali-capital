@@ -15,11 +15,10 @@ const Supplies = () => {
   ];
 
   return (
-    <section
-      id="supplies"
-      className={`${layout.sectionReverse} border-t-[1px] border-t-[#3F3E45] mb-16`}
-    >
-      <div className={`${layout.sectionImgReverse} relative w-[100%] h-[100%]`}>
+    <section id="supplies" className={`${layout.sectionReverse} mb-16 mt-8`}>
+      <div
+        className={`${layout.sectionImgReverse} relative w-[100%] h-[100%] `}
+      >
         {/* Use the Carousel component */}
         <Carousel
           className="mt-4"

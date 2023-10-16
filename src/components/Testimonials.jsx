@@ -5,7 +5,7 @@ import FeedbackCard from "./FeedbackCard";
 const Testimonials = () => (
   <section
     id="Directors"
-    className={`${styles.paddingY} ${styles.flexCenter} flex-col relative border-t-[1px] border-t-[#3F3E45]`}
+    className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
   >
     <div
       className={`${layout.section} lg:w-[70%]  flex flex-wrap justify-center items-center`}

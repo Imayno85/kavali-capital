@@ -30,10 +30,7 @@ FeatureCard.propTypes = {
 };
 
 const Business = () => (
-  <section
-    id="business"
-    className={`${layout.section} border-t-[1px] border-t-[#3F3E45] `}
-  >
+  <section id="business" className={`${layout.section}  `}>
     <div className={`${layout.sectionInfo} mt-8`}>
       <h2 className={styles.heading2}>
         Exceptional products and services, <br className="sm:block hidden" />{" "}

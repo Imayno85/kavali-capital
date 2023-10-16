@@ -12,7 +12,7 @@ const Clients = () => {
   return (
     <section
       id="clients"
-      className={`${styles.flexCenter}  border-t-[1px] border-t-[#3F3E45] items-center mb-16 `}
+      className={`${styles.flexCenter}   items-center mb-16 `}
     >
       <div className={`${styles.flexCenter} flex-wrap w-full`}>
         {clients.map((client) => (
