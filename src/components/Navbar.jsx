@@ -14,12 +14,14 @@ const Navbar = () => {
       }
     };
 
+    // Attach event listener to handle clicks outside the menu
     document.addEventListener("mousedown", handleClickOutside);
 
+    // Cleanup the event listener when the component is unmounted
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, []); // Empty dependency array means this effect runs once
 
   const customScrollTo = (element) => {
     const offsetTop = element.offsetTop;
@@ -43,6 +45,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex justify-between items-center navbar">
+      {/* Logo */}
       <div className="flex items-center">
         <a
           href="/"
@@ -58,6 +61,7 @@ const Navbar = () => {
         </a>
       </div>
 
+      {/* Toggle button for mobile */}
       <div className="flex flex-1 mr-4 justify-end items-center md:hidden">
         <img
           src={toggle ? close : menu}
@@ -67,6 +71,7 @@ const Navbar = () => {
         />
       </div>
 
+      {/* Mobile menu */}
       <div
         className={`md:hidden ${
           toggle ? "block" : "hidden"
@@ -89,6 +94,7 @@ const Navbar = () => {
         </ul>
       </div>
 
+      {/* Desktop menu */}
       <ul className="list-none md:flex hidden justify-end items-center flex-1  lg:mr-6">
         {navLinks.map((nav) => (
           <li key={nav.id}>

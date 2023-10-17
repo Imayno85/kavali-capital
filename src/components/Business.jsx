@@ -1,9 +1,9 @@
-import PropTypes from "prop-types"; // Import prop-types package
-
+import PropTypes from "prop-types";
 import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
 
+// FeatureCard component displays a feature with an icon, title, and content
 const FeatureCard = ({ icon, title, content }) => (
   <div className="flex flex-row p-6 rounded-[20px] mb-6 feature-card">
     <div
@@ -22,7 +22,6 @@ const FeatureCard = ({ icon, title, content }) => (
   </div>
 );
 
-// Add prop-type validation for the FeatureCard component
 FeatureCard.propTypes = {
   icon: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
@@ -30,7 +29,7 @@ FeatureCard.propTypes = {
 };
 
 const Business = () => (
-  <section id="business" className={`${layout.section}  `}>
+  <section id="business" className={`${layout.section}`}>
     <div className={`${layout.sectionInfo} mt-8`}>
       <h2 className={styles.heading2}>
         Exceptional products and services, <br className="sm:block hidden" />{" "}
@@ -52,10 +51,11 @@ const Business = () => (
         </b>
       </p>
 
+      {/* Button component can be added here */}
       <Button styles={`mt-10`} />
     </div>
 
-    {/* Mission, Vision & Promise */}
+    {/* Display mission, vision, and promise features */}
     <div className={`${layout.sectionImg1} flex-col mt-8 sm:mb-12`}>
       {features.map((feature) => (
         <FeatureCard key={feature.id} {...feature} />

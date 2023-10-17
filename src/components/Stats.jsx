@@ -2,6 +2,7 @@ import { ourValues } from "../constants";
 import { layout } from "../style";
 import PropTypes from "prop-types"; // Import prop-types package
 
+// Component for each value card
 const ValueCard = ({ icon, title, value }) => (
   <div className="flex flex-row p-6 rounded-[20px] mb-6 feature-card mt-0">
     <div className="w-[64px] h-[64px] rounded-full bg-dimBlue flex-shrink-0 flex items-center justify-center">
@@ -18,12 +19,14 @@ const ValueCard = ({ icon, title, value }) => (
   </div>
 );
 
+// PropTypes for ValueCard component
 ValueCard.propTypes = {
   icon: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
 };
 
+// Stats component
 const Stats = () => (
   <section id="values" className={`${layout.section} ${layout.sectionImg}  `}>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 sm:mb-8">
