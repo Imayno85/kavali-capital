@@ -31,6 +31,7 @@ import BankofAfrica from "./BankofAfrica.jpg";
 import postbank from "./postbank.jpg";
 import statehouse from "./statehouse.jpg";
 import fintelligenceauthority from "./fintelligenceauthority.jpg";
+import ccareuganda from "./ccareuganda.png";
 import integrity from "./integrity.svg";
 import customer_care from "./customer_care.svg";
 import quality from "./quality.svg";
@@ -69,6 +70,7 @@ export {
   postbank,
   statehouse,
   fintelligenceauthority,
+  ccareuganda,
   integrity,
   customer_care,
   team_work,

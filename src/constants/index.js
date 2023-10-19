@@ -22,6 +22,7 @@ import {
   customer_care,
   team_work,
   quality,
+  ccareuganda,
 } from "../assets";
 
 export const navLinks = [
@@ -276,5 +277,10 @@ export const clients = [
     id: "client-4",
     logo: fintelligenceauthority,
     name: "Financial Intelligence Authority",
+  },
+  {
+    id: "client-5",
+    logo: ccareuganda,
+    name: "C-Care Uganda",
   },
 ];
