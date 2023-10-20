@@ -23,6 +23,7 @@ import {
   team_work,
   quality,
   ccareuganda,
+  proav,
 } from "../assets";
 
 export const navLinks = [
@@ -262,25 +263,39 @@ export const clients = [
     id: "client-1",
     logo: BankofAfrica,
     name: "Bank of Africa",
+    url: "https://boauganda.com/",
   },
   {
     id: "client-2",
     logo: postbank,
     name: "Post Bank Uganda",
+    url: "https://www.postbank.co.ug/",
   },
   {
     id: "client-3",
     logo: statehouse,
     name: "State House Uganda",
+    url: "https://statehouse.go.ug/",
   },
   {
     id: "client-4",
     logo: fintelligenceauthority,
-    name: "Financial Intelligence Authority",
+    name: "FIA",
+    url: "https://www.fia.go.ug/",
   },
   {
     id: "client-5",
     logo: ccareuganda,
     name: "C-Care Uganda",
+    url: "https://c-care.com/ug/",
+  },
+];
+
+export const partners = [
+  {
+    id: "partner-1",
+    logo: proav,
+    name: "PROAV",
+    url: "https://www.proav.africa/",
   },
 ];

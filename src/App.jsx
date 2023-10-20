@@ -7,6 +7,7 @@ import {
   CTA,
   Footer,
   Navbar,
+  Partners,
   Stats,
   Testimonials,
   Hero,
@@ -93,6 +94,13 @@ const App = () => {
             OUR CLIENTS
           </div>
           <Clients />
+          <div
+            id="partners"
+            className={`${styles.heading3} text-center text-orange-gradient mt-4`}
+          >
+            OUR PARTNERS
+          </div>
+          <Partners />
 
           {/* Call to Action */}
           <CTA />
