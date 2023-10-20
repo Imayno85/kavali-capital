@@ -12,7 +12,10 @@ const Partners = () => {
 
   return (
     // Partners section
-    <section id="clients" className={`${styles.flexCenter} items-center mb-16`}>
+    <section
+      id="partners"
+      className={`${styles.flexCenter} items-center mb-16`}
+    >
       <div className={`${styles.flexCenter} flex-wrap w-full`}>
         {/* Map through partners and render each */}
         {partners.map((partner) => (
