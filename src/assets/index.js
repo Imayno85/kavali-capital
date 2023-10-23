@@ -36,7 +36,8 @@ import integrity from "./integrity.svg";
 import customer_care from "./customer_care.svg";
 import quality from "./quality.svg";
 import team_work from "./team_work.svg";
-import proav from "./proav.png.webp";
+import proav from "./proav.png";
+import stanbic from "./stanbic.png";
 
 export {
   // klogo,
@@ -77,4 +78,5 @@ export {
   team_work,
   quality,
   proav,
+  stanbic,
 };

@@ -24,6 +24,7 @@ import {
   quality,
   ccareuganda,
   proav,
+  stanbic,
 } from "../assets";
 
 export const navLinks = [
@@ -297,5 +298,11 @@ export const partners = [
     logo: proav,
     name: "PROAV",
     url: "https://www.proav.africa/",
+  },
+  {
+    id: "partner-2",
+    logo: stanbic,
+    name: "Stanbic Bank",
+    url: "https://www.stanbicbank.co.ug/",
   },
 ];
