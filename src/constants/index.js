@@ -62,20 +62,19 @@ export const features = [
     id: "feature-1",
     icon: mission,
     title: "Our Mission",
-    content: "To offer our customers the very best products and services.",
+    content: "To offer our customers the very best products and services",
   },
   {
     id: "feature-2",
     icon: vision,
     title: "Our Vision",
-    content:
-      "To be a company that best understands and satisfies the customer.",
+    content: "To be a company that best understands and satisfies the customer",
   },
   {
     id: "feature-3",
     icon: promise,
     title: "Our Promise",
-    content: "To treat every customer as if they're our only customer.",
+    content: "To treat every customer as if they're our only customer",
   },
 ];
 
@@ -85,28 +84,28 @@ export const services = [
     icon: audio,
     title: "Audio Equipment Hire",
     content:
-      "Elevate your audio experience with our premium range of cutting-edge audio equipment, delivering crystal-clear sound and immersive entertainment.",
+      "Elevate your audio experience with our premium range of cutting-edge audio equipment, delivering crystal-clear sound and immersive entertainment",
   },
   {
     id: "service-2",
     icon: finance,
     title: "Financial Services",
     content:
-      "Unlock your financial potential with our comprehensive range of innovative financial services tailored to meet your specific needs.",
+      "Unlock your financial potential with our comprehensive range of innovative financial services tailored to meet your specific needs",
   },
   {
     id: "service-3",
     icon: shipping,
     title: "Shipping Services",
     content:
-      "Reliable and efficient shipping services that ensure your packages reach their destination safely and on time. ",
+      "Reliable and efficient shipping services that ensure your packages reach their destination safely and on time ",
   },
   {
     id: "service-4",
     icon: repair,
     title: "Repairs",
     content:
-      "Trust our expert technicians to efficiently repair and restore your computers, phones, and tablets to their optimal performance.",
+      "Trust our expert technicians to efficiently repair and restore your computers, phones and tablets to their optimal performance",
   },
   {
     id: "service-5",
@@ -120,7 +119,7 @@ export const services = [
     icon: real_estate,
     title: "Real Estate",
     content:
-      "Find your dream property with our expert real estate services, offering personalized solutions for buying, selling, and renting properties that perfectly suit your needs",
+      "Find your dream property with our expert real estate services, offering personalized solutions for buying, selling and renting properties that perfectly suit your needs",
   },
 ];
 

@@ -36,7 +36,7 @@ const Business = () => (
         Redefined for your everyday needs
       </h2>
       <p className={`${styles.paragraph1} max-w-[470px] mt-5`}>
-        Our unwavering commitment to quality, value, and convenience reshapes
+        Our unwavering commitment to quality, value and convenience reshapes
         your satisfaction into an unparalleled journey. Seamlessly merging
         exceptional products and services, we transcend ordinary to deliver the
         extraordinary for your everyday needs.

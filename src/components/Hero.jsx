@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
         {/* Description */}
         <p className={`${styles.paragraph1} max-w-[470px] mt-5`}>
-          Experience the perfect blend of quality, value, and convenience with
+          Experience the perfect blend of quality, value and convenience with
           our exceptional products and services, elevating your satisfaction to
           new heights.
         </p>
