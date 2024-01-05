@@ -128,7 +128,7 @@ export const feedback = [
     id: "feedback-1",
     content:
       "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Yusuf Sserunkuma",
+    name: "Yusuf Sse-Kiyingi",
     title: "Founder & Managing Director",
     img: people01,
   },
