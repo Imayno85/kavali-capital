@@ -289,6 +289,12 @@ export const clients = [
     name: "C-Care Uganda",
     url: "https://c-care.com/ug/",
   },
+  {
+    id: "client-6",
+    logo: stanbic,
+    name: "Stanbic Uganda",
+    url: "https://www.stanbicbank.co.ug/",
+  },
 ];
 
 export const partners = [
