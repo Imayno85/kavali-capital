@@ -12,6 +12,7 @@ import {
   Testimonials,
   Hero,
   ArrowUpButton,
+  PdfView,
 } from "./components";
 
 const App = () => {
@@ -50,6 +51,14 @@ const App = () => {
             OUR VALUES
           </div>
           <Stats />
+          {/* Our Code oD Conduct */}
+          <div
+            id="hero"
+            className={`${styles.heading3} text-center mt-4  text-orange-gradient`}
+          >
+            OUR CODE OF CONDUCT
+          </div>
+          <PdfView />
 
           {/* About Us */}
           <div

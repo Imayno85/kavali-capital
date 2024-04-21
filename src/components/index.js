@@ -11,6 +11,7 @@ import Testimonials from "./Testimonials";
 import Hero from "./Hero";
 import ArrowUpButton from "./ArrowUpButton";
 import Partners from "./Partners";
+import PdfView from "./PdfView";
 
 export {
   Navbar,
@@ -25,4 +26,5 @@ export {
   Hero,
   ArrowUpButton,
   Partners,
+  PdfView,
 };

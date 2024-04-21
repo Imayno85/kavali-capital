@@ -25,6 +25,7 @@ import {
   ccareuganda,
   proav,
   stanbic,
+  pdf_icon,
 } from "../assets";
 
 export const navLinks = [
@@ -74,7 +75,7 @@ export const features = [
     id: "feature-3",
     icon: promise,
     title: "Our Promise",
-    content: "To treat every customer as if they're our only customer",
+    content: "To treat every customer as if they are our only customer",
   },
 ];
 
@@ -295,6 +296,12 @@ export const clients = [
     name: "Stanbic Uganda",
     url: "https://www.stanbicbank.co.ug/",
   },
+  {
+    id: "partner-7",
+    logo: stanbic,
+    name: "Stanbic Business Incubator",
+    url: "https://www.stanbicbank.co.ug/",
+  },
 ];
 
 export const partners = [
@@ -309,5 +316,18 @@ export const partners = [
     logo: stanbic,
     name: "Stanbic Bank",
     url: "https://www.stanbicbank.co.ug/",
+  },
+];
+
+export const code_of_conduct = [
+  {
+    id: "code-1",
+
+    name: "Code of Conduct",
+    url: "#",
+
+    icon: pdf_icon,
+    title: "Read Our Code of Conduct",
+    value: "Click here to navigate through our ethical compass",
   },
 ];

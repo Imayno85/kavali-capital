@@ -38,6 +38,8 @@ import quality from "./quality.svg";
 import team_work from "./team_work.svg";
 import proav from "./proav.png";
 import stanbic from "./stanbic.png";
+import pdf_icon from "./pdf_icon.svg";
+import KCL_Code_of_Conduct from "./KCL_Code_of_Conduct.pdf";
 
 export {
   // klogo,
@@ -79,4 +81,6 @@ export {
   quality,
   proav,
   stanbic,
+  pdf_icon,
+  KCL_Code_of_Conduct,
 };
