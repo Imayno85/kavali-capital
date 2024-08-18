@@ -25,7 +25,9 @@ import {
   ccareuganda,
   proav,
   stanbic,
+  aramex,
   pdf_icon,
+  LinkedIn,
 } from "../assets";
 
 export const navLinks = [
@@ -132,6 +134,8 @@ export const feedback = [
     name: "Yusuf Sserunkuma",
     title: "Founder & Managing Director",
     img: people01,
+    url: "https://www.linkedin.com/in/yusuf-sserunkuma?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    icon: LinkedIn,
   },
   {
     id: "feedback-2",
@@ -140,6 +144,8 @@ export const feedback = [
     name: "Anthony Anywar",
     title: "Director",
     img: people02,
+    url: "https://ug.linkedin.com/in/anthony-anywar-21289a125",
+    icon: LinkedIn,
   },
 ];
 
@@ -301,6 +307,12 @@ export const clients = [
     logo: stanbic,
     name: "Stanbic Business Incubator",
     url: "https://www.stanbicbank.co.ug/",
+  },
+  {
+    id: "partner-8",
+    logo: aramex,
+    name: "Aramex Uganda",
+    url: "https://www.aramex.com/",
   },
 ];
 

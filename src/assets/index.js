@@ -1,5 +1,6 @@
 // import klogo from "./klogo.svg";
 import klogo_com_bw from "./klogo_com_bw.svg";
+import LinkedIn from "./LinkedIn.svg";
 
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
@@ -38,6 +39,7 @@ import quality from "./quality.svg";
 import team_work from "./team_work.svg";
 import proav from "./proav.png";
 import stanbic from "./stanbic.png";
+import aramex from "./aramex.png";
 import pdf_icon from "./pdf_icon.svg";
 import KCL_Code_of_Conduct from "./KCL_Code_of_Conduct.pdf";
 
@@ -81,6 +83,8 @@ export {
   quality,
   proav,
   stanbic,
+  aramex,
   pdf_icon,
   KCL_Code_of_Conduct,
+  LinkedIn,
 };

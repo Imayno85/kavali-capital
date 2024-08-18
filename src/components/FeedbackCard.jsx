@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import styles from "../style";
+import { FaLinkedin } from "react-icons/fa";
 
-const FeedbackCard = ({ name, title, img }) => (
+const FeedbackCard = ({ name, title, img, url }) => (
   <div className="flex flex-col items-center p-12 my-5 lg:mx-2 max-w-full">
     <div className="rounded-full bg-white overflow-hidden w-63 h-63">
       <img
@@ -16,6 +17,15 @@ const FeedbackCard = ({ name, title, img }) => (
       </h4>
       <p className={`${styles.paragraph1}`}>{title}</p>
     </div>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${styles.paragraph1} flex items-center`}
+    >
+      <FaLinkedin className="mr-2" />
+      LinkedIn
+    </a>
   </div>
 );
 
@@ -23,6 +33,7 @@ FeedbackCard.propTypes = {
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 export default FeedbackCard;
