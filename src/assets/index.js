@@ -40,6 +40,7 @@ import team_work from "./team_work.svg";
 import proav from "./proav.png";
 import stanbic from "./stanbic.png";
 import aramex from "./aramex.png";
+import marie_stopes from "./marie.png";
 import pdf_icon from "./pdf_icon.svg";
 import KCL_Code_of_Conduct from "./KCL_Code_of_Conduct.pdf";
 
@@ -87,4 +88,5 @@ export {
   pdf_icon,
   KCL_Code_of_Conduct,
   LinkedIn,
+  marie_stopes,
 };

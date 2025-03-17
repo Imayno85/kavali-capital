@@ -26,6 +26,7 @@ import {
   proav,
   stanbic,
   aramex,
+  marie_stopes,
   pdf_icon,
   LinkedIn,
 } from "../assets";
@@ -313,6 +314,12 @@ export const clients = [
     logo: aramex,
     name: "Aramex Uganda",
     url: "https://www.aramex.com/",
+  },
+  {
+    id: "partner-9",
+    logo: marie_stopes,
+    name: "Marie Stopes UG",
+    url: "https://www.mariestopes.or.ug/",
   },
 ];
 
