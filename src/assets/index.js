@@ -29,7 +29,7 @@ import repair from "./repair.svg";
 import world from "./world.svg";
 import real_estate from "./real_estate.svg";
 import BankofAfrica from "./BankofAfrica.jpg";
-import postbank from "./postbank.jpg";
+import pearlBank from "./pearlBank.jpg";
 import statehouse from "./statehouse.jpg";
 import fintelligenceauthority from "./fintelligenceauthority.jpg";
 import ccareuganda from "./ccareuganda.png";
@@ -74,7 +74,7 @@ export {
   world,
   real_estate,
   BankofAfrica,
-  postbank,
+  pearlBank,
   statehouse,
   fintelligenceauthority,
   ccareuganda,

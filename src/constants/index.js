@@ -15,7 +15,7 @@ import {
   world,
   real_estate,
   BankofAfrica,
-  postbank,
+  pearlBank,
   statehouse,
   fintelligenceauthority,
   integrity,
@@ -275,9 +275,9 @@ export const clients = [
   },
   {
     id: "client-2",
-    logo: postbank,
-    name: "Post Bank Uganda",
-    url: "https://www.postbank.co.ug/",
+    logo: pearlBank,
+    name: "Pearl Bank Uganda",
+    url: "https://www.pearlbank.co.ug/",
   },
   {
     id: "client-3",
@@ -335,6 +335,12 @@ export const partners = [
     logo: stanbic,
     name: "Stanbic Bank",
     url: "https://www.stanbicbank.co.ug/",
+  },
+  {
+    id: "partner-3",
+    logo: pearlBank,
+    name: "Pearl Bank Uganda",
+    url: "https://www.pearlbank.co.ug/",
   },
 ];
 
