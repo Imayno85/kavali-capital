@@ -1,5 +1,6 @@
 import { services } from "../constants";
 import { layout } from "../style";
+import PropTypes from "prop-types";
 
 const FeatureCard = ({ icon, title, content }) => (
   <div className="flex flex-row p-6 rounded-[20px] mb-6 feature-card group">
@@ -16,6 +17,12 @@ const FeatureCard = ({ icon, title, content }) => (
     </div>
   </div>
 );
+
+FeatureCard.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+};
 
 const Services = () => (
   <section id="services" className={`${layout.section} mb-16`}>

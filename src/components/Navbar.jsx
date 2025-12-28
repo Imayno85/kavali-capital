@@ -100,7 +100,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation Links */}
         <ul className="list-none flex flex-col px-3 pt-2 pb-3 space-y-1 overflow-y-auto max-h-[calc(100vh-140px)]">
-          {navLinks.map((nav, index) => (
+          {navLinks.map((nav) => (
             <li key={nav.id}>
               <span
                 onClick={() => handleLinkClick(nav.id)}
