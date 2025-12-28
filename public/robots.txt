@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://imayno85.github.io/kavali-cap/sitemap.xml
+Sitemap: https://kavalicapital.com/sitemap.xml
