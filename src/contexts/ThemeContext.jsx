@@ -4,17 +4,10 @@ import PropTypes from 'prop-types';
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  // Check system preference and localStorage
+  // Check localStorage, always default to dark mode
   const getInitialTheme = () => {
     const savedTheme = localStorage.getItem('kavali-theme');
-    if (savedTheme) {
-      return savedTheme;
-    }
-    // Check system preference
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-      return 'light';
-    }
-    return 'dark'; // Default to dark (current theme)
+    return savedTheme || 'dark'; // Always default to dark mode
   };
 
   const [theme, setTheme] = useState(getInitialTheme);
