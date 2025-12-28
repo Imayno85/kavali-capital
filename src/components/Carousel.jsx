@@ -1,5 +1,5 @@
 import { heroCarousel } from "../constants";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { FiPause, FiPlay, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const Carousel = () => {
@@ -19,13 +19,13 @@ const Carousel = () => {
     }
   };
 
-  const nextImage = () => {
+  const nextImage = useCallback(() => {
     setCurrentImage((prev) => (prev + 1) % totalImages);
-  };
+  }, [totalImages]);
 
-  const prevImage = () => {
+  const prevImage = useCallback(() => {
     setCurrentImage((prev) => (prev - 1 + totalImages) % totalImages);
-  };
+  }, [totalImages]);
 
   // Auto-scroll effect with proper dependencies
   useEffect(() => {
@@ -58,7 +58,7 @@ const Carousel = () => {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  }, [nextImage, prevImage]);
 
   return (
     <div

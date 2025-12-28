@@ -1,4 +1,3 @@
-// import React from "react";
 import styles from "../style";
 import Button from "./Button";
 
@@ -64,4 +63,5 @@ const CTA = () => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default CTA;

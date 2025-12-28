@@ -3,14 +3,6 @@ import PropTypes from 'prop-types';
 
 const ThemeContext = createContext();
 
-export const useTheme = () => {
-  const context = useContext(ThemeContext);
-  if (!context) {
-    throw new Error('useTheme must be used within ThemeProvider');
-  }
-  return context;
-};
-
 export const ThemeProvider = ({ children }) => {
   // Check system preference and localStorage
   const getInitialTheme = () => {
@@ -63,4 +55,13 @@ export const ThemeProvider = ({ children }) => {
 
 ThemeProvider.propTypes = {
   children: PropTypes.node.isRequired,
+};
+
+// eslint-disable-next-line react-refresh/only-export-components
+export const useTheme = () => {
+  const context = useContext(ThemeContext);
+  if (!context) {
+    throw new Error('useTheme must be used within ThemeProvider');
+  }
+  return context;
 };
