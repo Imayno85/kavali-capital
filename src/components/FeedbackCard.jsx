@@ -3,12 +3,13 @@ import styles from "../style";
 import { FaLinkedin } from "react-icons/fa";
 
 const FeedbackCard = ({ name, title, img, url }) => (
-  <div className="flex flex-col items-center p-12 my-5 lg:mx-2 max-w-full">
-    <div className="rounded-full bg-white overflow-hidden w-63 h-63">
+  <div className="flex flex-col items-center p-12 my-5 lg:mx-2 max-w-full feedback-card rounded-[20px]">
+    <div className="rounded-full bg-surface-tertiary overflow-hidden w-63 h-63 p-1 shadow-md">
       <img
         src={img}
-        alt={name}
+        alt={`${name} - ${title}`}
         className="w-[60] h-[60] object-cover rounded-full"
+        loading="lazy"
       />
     </div>
     <div className="flex flex-col items-center mt-4">

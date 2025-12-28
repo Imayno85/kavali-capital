@@ -1,6 +1,5 @@
 import Navbar from "./Navbar";
 import Supplies from "./Supplies";
-
 import Business from "./Business";
 import Services from "./Services";
 import Clients from "./Clients";
@@ -12,6 +11,7 @@ import Hero from "./Hero";
 import ArrowUpButton from "./ArrowUpButton";
 import Partners from "./Partners";
 import PdfView from "./PdfView";
+import ThemeToggle from "./ThemeToggle";
 
 export {
   Navbar,
@@ -27,4 +27,5 @@ export {
   ArrowUpButton,
   Partners,
   PdfView,
+  ThemeToggle,
 };

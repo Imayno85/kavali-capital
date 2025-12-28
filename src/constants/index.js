@@ -132,7 +132,7 @@ export const feedback = [
     id: "feedback-1",
     content:
       "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Yusuf Sserunkuma",
+    name: "Eusuph KIYINGI ANYWAR",
     title: "Founder & Managing Director",
     img: people01,
     url: "https://www.linkedin.com/in/yusuf-sserunkuma?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -142,7 +142,7 @@ export const feedback = [
     id: "feedback-2",
     content:
       "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Anthony Anywar",
+    name: "Anthony ANYWAR",
     title: "Director",
     img: people02,
     url: "https://ug.linkedin.com/in/anthony-anywar-21289a125",

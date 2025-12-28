@@ -26,10 +26,17 @@ const App = () => {
 
   return (
     <div className="bg-primary w-full overflow-hidden">
+      {/* Skip to main content link for accessibility */}
+      <a href="#main-content" className="skip-to-main">
+        Skip to main content
+      </a>
+
       {/* Navbar */}
-      <div className={`${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Navbar />
+      <div className="sticky top-0 z-50 bg-primary/90 backdrop-blur-lg border-b border-dimWhite/10">
+        <div className={`${styles.paddingX} ${styles.flexStart}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Navbar />
+          </div>
         </div>
       </div>
 
@@ -41,7 +48,7 @@ const App = () => {
       </div>
 
       {/* Main content sections */}
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div id="main-content" className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           {/* Our Values */}
           <div

@@ -25,9 +25,10 @@ const Clients = () => {
               <a href={client.url} target="_blank" rel="noopener noreferrer">
                 <img
                   src={client.logo}
-                  alt={`${client.name} Logo`} // Alt text with client name
-                  className="sm:w-[192px] w-[100px] object-contain rounded-xl mt-16"
-                />{" "}
+                  alt={`${client.name} Logo`}
+                  className="sm:w-[192px] w-[100px] object-contain rounded-xl mt-16 transition-transform duration-normal ease-out-expo hover:scale-110"
+                  loading="lazy"
+                />
               </a>
               {/* Client Name */}
               <span className={`${styles.paragraph1} mt-4 text-center`}>

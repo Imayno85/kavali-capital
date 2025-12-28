@@ -1,31 +1,54 @@
 const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
+  // 2025 Modern Typography System with Professional Letter-spacing
+  // Display - Hero titles (largest)
+  display:
+    "font-poppins font-extrabold text-[48px] xs:text-[64px] text-white leading-[1.1] tracking-[-0.02em] w-full",
+
+  // H1 - Main page titles
+  heading1:
+    "font-poppins font-bold text-[40px] xs:text-[48px] text-white leading-[1.15] tracking-[-0.015em] w-full",
+
+  // H2 - Section headings (previously heading2)
   heading2:
-    "font-poppins font-extrabold xs:text-[45.6px] text-black  text-[38px] text-white xs:leading-[72.96px] leading-[63.46px] w-full",
-  // heading3:
-  //   "font-poppins font-bold text-[32.5px] text-white leading-[50.875px] w-full",
+    "font-poppins font-bold text-[32px] xs:text-[36px] text-white leading-[1.25] tracking-[-0.01em] w-full",
+
+  // H3 - Subsection headings (previously heading3)
   heading3:
-    "font-poppins font-bold text-[32.5px] text-white leading-[50.875px] xs:text-[27px] xs:leading-[43.0875px] w-full",
+    "font-poppins font-bold text-[24px] xs:text-[28px] text-white leading-[1.35] tracking-normal w-full",
 
+  // H4 - Card titles (previously heading4)
   heading4:
-    "font-raleway font-semibold text-[26.6px] text-white leading-[45.6px] w-full",
+    "font-raleway font-semibold text-[20px] xs:text-[24px] text-white leading-[1.4] tracking-normal w-full",
 
+  // Body Large - Prominent body text
+  bodyLarge:
+    "font-raleway font-normal text-dimWhite text-[18px] leading-[1.75] tracking-[0.01em]",
+
+  // Body - Default body text (previously paragraph)
   paragraph:
-    "font-raleway font-normal text-dimWhite text-[17.1px] leading-[22.8px]",
+    "font-raleway font-normal text-dimWhite text-[16px] leading-[1.7] tracking-[0.01em]",
 
+  // Body Small (previously paragraph1)
   paragraph1:
-    "font-poppins font-normal text-dimWhite text-[15.2px] leading-[22.8px]",
+    "font-raleway font-normal text-dimWhite text-[14px] leading-[1.6] tracking-[0.015em]",
 
+  // Caption - Small supporting text
+  caption:
+    "font-raleway font-medium text-dimWhite text-[12px] leading-[1.4] tracking-[0.03em]",
+
+  // Layout utilities
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
 
-  paddingX: "sm:px-15.2 px-5",
-  paddingY: "sm:py-15.2 py-5",
-  padding: "sm:px-15.2 px-5 sm:py-11.4 py-3.8",
+  // Spacing utilities (8px base grid)
+  paddingX: "sm:px-16 px-6",
+  paddingY: "sm:py-16 py-6",
+  padding: "sm:px-16 px-6 sm:py-12 py-4",
 
-  marginX: "sm:mx-15.2 mx-5",
-  marginY: "sm:my-15.2 my-5",
+  marginX: "sm:mx-16 mx-6",
+  marginY: "sm:my-16 my-6",
 };
 
 export const layout = {

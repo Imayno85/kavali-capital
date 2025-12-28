@@ -28,8 +28,9 @@ const Partners = () => {
               <a href={partner.url} target="_blank" rel="noopener noreferrer">
                 <img
                   src={partner.logo}
-                  alt={`${partner.name} Logo`} // Alt text with partner name
-                  className="sm:w-[192px] w-[100px] object-contain rounded-xl mt-16"
+                  alt={`${partner.name} Logo`}
+                  className="sm:w-[192px] w-[100px] object-contain rounded-xl mt-16 transition-transform duration-normal ease-out-expo hover:scale-110"
+                  loading="lazy"
                 />
               </a>
               {/* Partner Name */}

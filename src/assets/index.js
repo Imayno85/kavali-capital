@@ -1,5 +1,6 @@
 // import klogo from "./klogo.svg";
 import klogo_com_bw from "./klogo_com_bw.svg";
+import klogo_light from "./klogo_light.svg";
 import LinkedIn from "./LinkedIn.svg";
 
 import quotes from "./quotes.svg";
@@ -42,11 +43,11 @@ import stanbic from "./stanbic.png";
 import aramex from "./aramex.png";
 import marie_stopes from "./marie.png";
 import pdf_icon from "./pdf_icon.svg";
-import KCL_Code_of_Conduct from "./KCL_Code_of_Conduct.pdf";
 
 export {
   // klogo,
   klogo_com_bw,
+  klogo_light,
   quotes,
   robot,
   send,
@@ -86,7 +87,6 @@ export {
   stanbic,
   aramex,
   pdf_icon,
-  KCL_Code_of_Conduct,
   LinkedIn,
   marie_stopes,
 };

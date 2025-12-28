@@ -27,12 +27,15 @@ const Supplies = () => {
           selectedItem={0} // Set the initially selected item to control the highlight
           renderIndicator={(onClickHandler, isSelected, index, label) => {
             const style = {
-              background: isSelected ? "orange" : "#ddd",
-              width: "8px",
-              height: "8px",
+              background: isSelected ? "var(--accent-orange)" : "var(--surface-tertiary)",
+              width: isSelected ? "10px" : "8px",
+              height: isSelected ? "10px" : "8px",
               borderRadius: "50%",
               display: "inline-block",
               margin: "0 4px",
+              transition: "all 300ms ease",
+              cursor: "pointer",
+              boxShadow: isSelected ? "var(--glow-orange)" : "none",
             };
             return (
               <li

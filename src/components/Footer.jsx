@@ -6,7 +6,7 @@ const Footer = () => (
 
     <div className="w-full flex md:flex-row flex-col pt-6 ">
       <p className={`${styles.paragraph1} xs:text-center`}>
-        Copyright Ⓒ 2023 Kavali Capital Limited. All Rights Reserved.
+        Copyright Ⓒ 2025 Kavali Capital Limited. All Rights Reserved.
       </p>
     </div>
   </section>
