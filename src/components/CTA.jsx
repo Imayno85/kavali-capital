@@ -15,7 +15,7 @@ const CTA = () => {
           <p className={`${styles.paragraph} max-w-[470px] mt-0`}>
             <b>Call:</b>{" "}
             <span className={styles.paragraph1}>
-              <a href="tel:+256773275029">+256 773 275 029</a>
+              <a href="tel:+256+393102662">+256 393 102 662</a> |  <a href="tel:+256773275029">+256 773 275 029</a> 
             </span>
           </p>
         </div>
