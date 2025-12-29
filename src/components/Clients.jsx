@@ -2,14 +2,6 @@ import { clients } from "../constants";
 import styles from "../style";
 
 const Clients = () => {
-  // Check for duplicate ids
-  const duplicateIds = clients.filter(
-    (client, index) => clients.findIndex((c) => c.id === client.id) !== index
-  );
-
-  // Log duplicate IDs (for debugging)
-  console.log("Duplicate IDs:", duplicateIds);
-
   return (
     // Clients section
     <section id="clients" className={`${styles.flexCenter} items-center mb-16`}>

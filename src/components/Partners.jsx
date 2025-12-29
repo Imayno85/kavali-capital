@@ -2,14 +2,6 @@ import { partners } from "../constants";
 import styles from "../style";
 
 const Partners = () => {
-  // Check for duplicate ids
-  const duplicateIds = partners.filter(
-    (partner, index) => partners.findIndex((c) => c.id === partner.id) !== index
-  );
-
-  // Log duplicate IDs (for debugging)
-  console.log("Duplicate IDs:", duplicateIds);
-
   return (
     // Partners section
     <section

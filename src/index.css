@@ -1,5 +1,16 @@
-/* Optimized Font Loading - Only weights actually used */
+/* Optimized Font Loading - Only weights actually used with swap for instant text rendering */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Raleway:wght@400;500;600&display=swap");
+
+/* Font face with font-display swap for better performance */
+@font-face {
+  font-family: 'Poppins';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;

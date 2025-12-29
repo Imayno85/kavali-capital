@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import viteCompression from 'vite-plugin-compression'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,6 +18,20 @@ export default defineConfig({
         });
       },
     },
+    // Gzip compression for better performance
+    viteCompression({
+      algorithm: 'gzip',
+      ext: '.gz',
+      threshold: 10240, // Only compress files larger than 10KB
+      deleteOriginFile: false,
+    }),
+    // Brotli compression for even better compression
+    viteCompression({
+      algorithm: 'brotliCompress',
+      ext: '.br',
+      threshold: 10240,
+      deleteOriginFile: false,
+    }),
   ],
   server: {
     cors: true,
@@ -39,6 +54,17 @@ export default defineConfig({
           vendor: ['react', 'react-dom'],
           router: ['react-router-dom'],
           icons: ['react-icons'],
+          pdf: ['react-pdf', 'pdfjs-dist'],
+          carousel: ['react-responsive-carousel'],
+        },
+        // Optimize asset file naming for better caching
+        assetFileNames: (assetInfo) => {
+          const info = assetInfo.name.split('.');
+          const ext = info[info.length - 1];
+          if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(ext)) {
+            return `assets/images/[name]-[hash][extname]`;
+          }
+          return `assets/[name]-[hash][extname]`;
         },
       },
     },
@@ -46,6 +72,10 @@ export default defineConfig({
     chunkSizeWarningLimit: 1000,
     // Source maps for debugging (disable in production if not needed)
     sourcemap: false,
+    // Target modern browsers for better optimization
+    target: 'esnext',
+    // CSS code splitting
+    cssCodeSplit: true,
   },
   // Performance optimizations
   optimizeDeps: {
