@@ -2,7 +2,7 @@ import { code_of_conduct } from "../constants";
 import { layout } from "../style";
 import PropTypes from "prop-types";
 import { pdf_icon } from "../assets";
-import { FiDownload, FiExternalLink, FiFileText } from "react-icons/fi";
+import { FiExternalLink, FiFileText } from "react-icons/fi";
 
 // PDF file path from public folder
 const KCL_Code_of_Conduct = "/KCL_Code_of_Conduct.pdf";
@@ -61,8 +61,8 @@ const PdfView = () => {
             </p>
           </div>
 
-          {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          {/* Action Button */}
+          <div className="flex justify-center items-center">
             <a
               href={KCL_Code_of_Conduct}
               target="_blank"
@@ -71,14 +71,6 @@ const PdfView = () => {
             >
               <FiExternalLink className="w-6 h-6" />
               View PDF
-            </a>
-            <a
-              href={KCL_Code_of_Conduct}
-              download="Kavali_Capital_Code_of_Conduct.pdf"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-surface-tertiary hover:bg-dimBlue rounded-xl font-poppins font-semibold text-white border-2 border-dimBlue/30 hover:border-accent-cyan transition-all duration-200 w-full sm:w-auto justify-center"
-            >
-              <FiDownload className="w-6 h-6" />
-              Download PDF
             </a>
           </div>
 
